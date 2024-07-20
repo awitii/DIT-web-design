@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awitii Photography</title>
+    <link rel="stylesheet" href="Trix sublime,css.css">
+</head>
+<body>
+    <header>
+        <h1>Awitii Photography</h1>
+        <div class="s-header__logo">
+            <a class="logo" href="#home">
+                <img src="logo.png" alt="Home">
+            </a>
+        </div>
+    </header>
+    <style>
+        header {
+            background-color: #00bcd4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        footer {
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00acc1;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #00838f;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 2px solid #ffb3b3;
+        }
+        form input[type="submit"] {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.75rem;
+        }
+        form input[type="submit"]:hover {
+            background-color: #00838f;
+        }
+        .highlight {
+            color: #ffb3b3;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <header 1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Book a session</a></li>
+            </ul>
+        </nav>
+    </header 1>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Director Awitii - Photographer/Videographer/Web Developer</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Awiti Darman Angila has a <b>profound passion for videography</b>, which serves as a powerful medium for him to express his creativity and tell compelling stories. He is captivated by the way moving images can convey emotions and narratives in a dynamic and immersive manner. For Awiti, videography is more than just capturing moments; it's about weaving together visual elements to <b>create a cohesive and impactful story</b>. This passion drives him to constantly explore new techniques, experiment with different styles, and push the boundaries of his craft, making his work stand out in the ever-evolving world of visual storytelling..</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Potright</h3>
+            <p>This is a close up shot.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>landscape</h3>
+            <p>This is a wide range shot.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="contact" class="section">
+        <h2 class="highlight">Contact</h2>
+        <p>Feel free to reach out for any inquiries or bookings:</p>
+        <p>Email: info@awitiiphotography.com</p>
+        <p>Instagram<br>
+         <b>
+            <i>
+                its_awitii
+            </i>
+         </b>
+        </p>
+        <p>Phone: 011-235-5205</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 <b>Director Awitii.</b> All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your booking! We will get back to you shortly.');
+        });
+    </script>
+    <script src="trix sublime.js"></script>
+</body>
+</html>
